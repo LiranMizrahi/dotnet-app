@@ -14,7 +14,7 @@ image:
 ## Application/Deployment-specific values (For configuring Deployment, Service, Route, ConfigMap, etc)
 deploy:
   ## Number of pod replicas to deploy
-  replicas: 1
+  replicas: 2
   ## Freeform resources. More information: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
   resources:
   #  limits:
@@ -56,6 +56,8 @@ deploy:
 
   ## Freeform env. More information: https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/
   env:
+    - name: ENDPOINT_URL
+      value: "localhost"
   ## Freeform envFrom. More information: https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
   envFrom:
   #  - configMapRef:

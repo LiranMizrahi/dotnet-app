@@ -1,3 +1,16 @@
+# Commit the changes to git
+git commit -am "new image tag"
+if [ $? -ne 0 ]; then
+  echo "Error: Git commit failed."
+  exit 1
+fi
+
+git push
+if [ $? -ne 0 ]; then
+  echo "Error: Git push failed."
+  exit 1
+fi
+
 #!/bin/bash
 
 # Ensure the runs directory is in the PATH

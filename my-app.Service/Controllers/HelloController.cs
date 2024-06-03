@@ -10,7 +10,8 @@ namespace my_app.Service.Controllers
         [Route("hello")]
         public IActionResult GetHello()
         {
-            return Ok("Hello, World! From LiranNN");
+            var value = System.Environment.GetEnvironmentVariable("ENDPOINT_URL");
+            return Ok("value");
         }
     }
 }
