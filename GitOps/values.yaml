@@ -7,6 +7,7 @@ global:
 image:
   ## Name of the image you want to build/deploy
   ## Defaults to the release name
+  ## docker pull ghcr.io/liranmizrahi/dotnet-app:v5
   name: ghcr.io/liranmizrahi/dotnet-app
   ## Tag that you want to build/deploy
   tag: v5
