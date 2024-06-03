@@ -57,7 +57,7 @@ deploy:
   ## Freeform env. More information: https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/
   env:
     - name: ENDPOINT_URL
-      value: "localhost"
+      value: "localhost:8080"
   ## Freeform envFro m. More information: https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
   envFrom:
   #  - configMapRef:
