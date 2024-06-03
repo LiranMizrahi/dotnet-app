@@ -10,7 +10,7 @@ namespace my_app.Service.Controllers
         [Route("hello")]
         public IActionResult GetHello()
         {
-            return Ok("Hello, World! From Liran");
+            return Ok("Hello, World! From LiranNN");
         }
     }
 }
