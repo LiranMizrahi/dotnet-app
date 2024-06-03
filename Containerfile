@@ -14,7 +14,7 @@ COPY my-app.Service/ ./
 
 # Build the application
 RUN dotnet publish -c Release -o out
-RUN sudo apt-get install python3.6
+RUN apt-get install python3.6
 # Stage 2: Create the runtime image
 FROM registry.access.redhat.com/ubi8/dotnet-80-runtime AS runner
 
