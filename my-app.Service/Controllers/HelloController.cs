@@ -14,7 +14,7 @@ namespace my_app.Service.Controllers
         {
             try
         {
-            HttpResponseMessage response = await client.GetAsync("http://localhost:8080/user17.user17-argocd/hello/test");
+            HttpResponseMessage response = await client.GetAsync("http://user17-dotnet-app.user17-application:8080");
             response.EnsureSuccessStatusCode(); // Throw an exception if the response is not successful
 
             string responseBody = await response.Content.ReadAsStringAsync();
