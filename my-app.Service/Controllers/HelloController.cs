@@ -11,7 +11,7 @@ namespace my_app.Service.Controllers
         public IActionResult GetHello()
         {
             var value = System.Environment.GetEnvironmentVariable("ENDPOINT_URL");
-            return Ok("value");
+            return Ok(value);
         }
     }
 }
