@@ -5,9 +5,9 @@ metadata:
 spec:
   params:
     - name: GIT_URL
-      value: "https://github.com/LiranMizrahi/dotnet-app.git"
+      value: "https://github.com/liranmizrahi/dotnet-app.git"
     - name: REGISTRY
-      value: LiranMizrahi
+      value: liranmizrahi
     - name: IMAGE_NAME
       value: dotnet-app
     - name: IMAGE_TAG
